@@ -6,8 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  
+
   .side-nav {
     font-size: 1.4rem;
     list-style: none;
@@ -66,7 +65,7 @@
       fill: currentColor; /* Selected element or its parent(__link) color */
     }
   }
-
+  
   .legal {
     font-size: 1.2rem;
     color: var(--color-grey-light-4);

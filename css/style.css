@@ -53,7 +53,8 @@ body {
     border-bottom: var(--line);
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    /* user-nav is in /components */ }
   .container .content {
     display: flex; }
     .container .content .sidebar {
@@ -87,51 +88,6 @@ body {
           background-color: yellowgreen;
           flex: 1; }
 
-.list {
-  list-style: none;
-  margin: 3rem 0;
-  padding: 3rem 0;
-  border-top: var(--line);
-  border-bottom: var(--line);
-  display: flex;
-  flex-wrap: wrap; }
-  .list__item {
-    flex: 0 0 50%;
-    margin-bottom: .7rem; }
-  .list__item::before {
-    content: "";
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    margin-right: .7rem;
-    /* 
-    Older browsers 
-    background-image: url(../img/chevron-thin-right.svg);
-    background-size: cover; 
-    */
-    /* Newer browsers - masks */
-    background-color: var(--color-primary);
-    -webkit-mask-image: url(../img/chevron-thin-right.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(../img/chevron-thin-right.svg);
-    mask-size: cover; }
-
-.recommend {
-  font-size: 1.3rem;
-  color: var(--color-grey-dark-3);
-  display: flex;
-  align-items: center; }
-  .recommend__count {
-    margin-right: auto; }
-  .recommend__photo {
-    box-sizing: content-box;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    border: 3px solid var(--color-white); }
-    .recommend__photo:not(:last-child) {
-      margin-right: -1.5rem; }
-
 .btn-inline {
   border: none;
   color: var(--color-primary);
@@ -164,6 +120,45 @@ body {
   .gallery__photo {
     width: 100%;
     display: block; }
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2.5rem; }
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+  .list__item::before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: .7rem;
+    /* 
+    Older browsers 
+    background-image: url(../img/chevron-thin-right.svg);
+    background-size: cover; 
+    */
+    /* Newer browsers - masks */
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(../img/chevron-thin-right.svg);
+    mask-size: cover; }
+
+.logo {
+  height: 3.25rem;
+  margin-left: 2rem; }
 
 .overview {
   display: flex;
@@ -207,15 +202,21 @@ body {
     font-size: .8rem;
     text-transform: uppercase; }
 
-.legal {
-  font-size: 1.2rem;
-  color: var(--color-grey-light-4);
-  text-align: center;
-  padding: 2.5rem; }
-
-.logo {
-  height: 3.25rem;
-  margin-left: 2rem; }
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  align-items: center; }
+  .recommend__count {
+    margin-right: auto; }
+  .recommend__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-white); }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.5rem; }
 
 .search {
   flex: 0 0 40%;
@@ -327,5 +328,6 @@ body {
     align-items: center; }
   .user-nav__user-photo {
     height: 3.75rem;
+    width: 3.4rem;
     border-radius: 50%;
     margin-right: 1rem; }

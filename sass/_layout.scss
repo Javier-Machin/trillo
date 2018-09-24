@@ -44,12 +44,12 @@
 
       .detail {
         display: flex;
+        font-size: 1.4rem;
         padding: 4.5rem;
         background-color: var(--color-grey-light-1);
         border-bottom: var(--line);
 
         .description {
-          font-size: 1.4rem;
           background-color: var(--color-white);
           box-shadow: var(--shadow-light);
           padding: 3rem;
@@ -64,8 +64,11 @@
         }
 
         .user-reviews {
-          background-color: yellowgreen;
           flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* review and button styles are in /components */
         }
       }
     }
